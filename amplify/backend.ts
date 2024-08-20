@@ -1,6 +1,11 @@
+/*
+  The following code will import the auth, data, and storage backend definitions:
+*/
+
 import { defineBackend } from '@aws-amplify/backend';
 import { auth } from './auth/resource';
 import { data } from './data/resource';
+import { storage } from './storage/resource';
 
 /**
  * @see https://docs.amplify.aws/react/build-a-backend/ to add storage, functions, and more
@@ -8,4 +13,5 @@ import { data } from './data/resource';
 defineBackend({
   auth,
   data,
+  storage
 });
